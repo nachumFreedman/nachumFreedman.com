@@ -1,0 +1,60 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #4E91F0;
+  display: flex;
+  height: 10vw;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+div.HeaderButtons {
+  margin-left: 20vw;
+  width: 30vw;
+  top: 3vw;
+  margin-top: 2.5vw;
+  padding-right: 0;
+  display: flex;
+}
+.HeaderName {
+  padding-right: 0;
+  margin-left: 0;
+  min-width: 50vw;
+}
+.ClickButton {
+  position: fixed;
+}
+.ButtonBarLeft {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.ButtonBarRight {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.ButtonBar {
+  border-radius: 0;
+}
+.GraffitIMG {
+  width: 10vw;
+  height: auto;
+}
+.ImgDiv {
+  transform: rotate(180deg);
+}
