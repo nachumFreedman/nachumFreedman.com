@@ -1,0 +1,38 @@
+const stub = {
+  ETH: {
+    BTC: 0.1325,
+    USD: 301.89,
+    EUR: 273.85
+  }
+};
+
+class getXdata {
+  constructor(next, done, err, {Fetcher}){
+    this.fetcher = new Fetcher(
+      pon=> next( { payload: pon } ),
+      done,
+      err
+    );
+
+    this.next = next;
+  }
+
+  handleRequest(action){
+    action.network.url = 'https://min-api.cryptocompare.com/data/pricemulti?fsyms=ETH&tsyms=BTC,USD,EUR';
+    this.fetcher.handleRequest(action);
+
+  }
+}
+
+export default getXdata;
+
+
+export const getXdataMock = class getXdataMock {
+  constructor(next){
+    this.next = next
+  }
+
+  handleRequest( action ){
+    this.next(stub);
+  }
+};

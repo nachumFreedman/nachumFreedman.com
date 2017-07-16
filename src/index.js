@@ -10,6 +10,7 @@ import Work from './Work';
 import About from './About';
 import Sketch from './components/Sketch';
 import { bootApp } from 'tahini';
+import Clock from './components/Clock'
 
 const app = bootApp();
 const history = createHashHistory();

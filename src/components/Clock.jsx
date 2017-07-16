@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import './App.css';
-import  DropDown  from './DropDown'
+//import  DropDown  from './DropDown'
 import { fromJS } from 'immutable';
 import './ClockFace.css';
 
 class Clock extends Component {
   static get namespace(){
-    return 'coinx-app';
+    return 'Clock';
   }
 
   static get actions(){
@@ -27,7 +26,7 @@ class Clock extends Component {
 
   static get initState(){
     return fromJS({
-      epocMilis: 0,
+      epocMillis: 0,
     });
   }
 
@@ -52,7 +51,6 @@ class Clock extends Component {
     return (
       <div className="App">
         <div className='clockFace'>
-          <DropDown/>
           <span className='clock1'>1</span>
           <span className='clock2'>2</span>
           <span className='clock3'>3</span>
