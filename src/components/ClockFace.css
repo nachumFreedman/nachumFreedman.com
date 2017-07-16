@@ -1,0 +1,114 @@
+.secondHand{
+  position: absolute;
+  z-index: 5;
+  color: red;
+  width: .2vw;
+  height: 35%;
+  background: red;
+  transform-origin: top;
+  top: 50%;
+  left: 50%;
+}
+.minuteHand{
+  position: absolute;
+  z-index: 2;
+  width: .3vw;
+  height: 35%;
+  background: black;
+  transform-origin: top;
+  top: 50%;
+  left: 50%;
+}
+.hourHand{
+  position: absolute;
+  z-index: 2;
+  width: .3vw;
+  height: 25%;
+  background: black;
+  transform-origin: top;
+  top: 50%;
+  left: 50%;
+}
+.clockFace {
+  width: 0;
+  margin-left: 50%;
+  margin-top: 10vw;
+  width: 20vw;
+  height: 20vw;
+  background: yellow;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: .5vw .5vw 5px grey;
+}
+.clock1{
+  font-size: 2.5vw;
+  top: 8%;
+  left: 67%;
+  position: absolute;
+}
+.clock2{
+  font-size: 2.5vw;
+  top: 23%;
+  left: 80%;
+  position: absolute;
+}
+.clock3{
+  font-size: 2.5vw;
+  top: 41.5%;
+  left: 85%;
+  position: absolute;
+}
+.clock4{
+  font-size: 2.5vw;
+  top: 60%;
+  left: 81%;
+  position: absolute;
+}
+.clock5{
+  font-size: 2.5vw;
+  top: 75%;
+  left: 66%;
+  position: absolute;
+}
+.clock6{
+  font-size: 2.5vw;
+  top: 80%;
+  left: 47%;
+  position: absolute;
+}
+.clock7{
+  font-size: 2.5vw;
+  top: 75%;
+  left: 27%;
+  position: absolute;
+}
+.clock8{
+  font-size: 2.5vw;
+  top: 60%;
+  left: 12%;
+  position: absolute;
+}
+.clock9{
+  font-size: 2.5vw;
+  top: 41.5%;
+  left: 7%;
+  position: absolute;
+}
+.clock10{
+  font-size: 2.5vw;
+  top: 23%;
+  left: 10%;
+  position: absolute;
+}
+.clock11{
+  font-size: 2.5vw;
+  top: 8%;
+  left: 23%;
+  position: absolute;
+}
+.clock12{
+  font-size: 2.5vw;
+  top: 3%;
+  left: 42%;
+  position: absolute;
+}
