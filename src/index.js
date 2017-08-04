@@ -10,7 +10,7 @@ import Work from './Work';
 import About from './About';
 import Sketch from './components/Sketch';
 import { bootApp } from 'tahini';
-import Clock from './components/Clock'
+import Clock from './components/Clock';
 
 const app = bootApp();
 const history = createHashHistory();
@@ -20,6 +20,7 @@ const SketchP = app.getDevice( Sketch, ['Sketch'], Sketch.initState );
 ReactDOM.render(
   <Router history={history}>
     <Layout>
+
       <Switch>
         <Route path='/blog' component={Blog}/>
         <Route path='/home' component={SketchP}/>

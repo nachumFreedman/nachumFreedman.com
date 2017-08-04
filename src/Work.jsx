@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './Work.css'
-
+import Clock from './components/Clock'
 class Work extends Component {
   render() {
     return (
@@ -13,7 +13,8 @@ class Work extends Component {
           </div>
           <div className='WorkBoxHeader'>Graffit</div>
         </button>
-        
+        <Clock/>
+
         <button className='WrokBox btn btn-warning'>
           <div className='ImgDiv'>
             <img src='./graffit.JPG'
